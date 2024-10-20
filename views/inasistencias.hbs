@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Tipo</th>
+            <th>Empleado</th>
+            <th>Tipo de asistencia</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each inasistencias}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.Fecha}}</td>
+            <td>{{this.Hora}}</td>
+            <td>{{this.Tipo}}</td>
+            <td>{{empleado.Nombre}} {{empleado.Apellido}}</td>
+            <td>{{tipo_asistencia.Tipo}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

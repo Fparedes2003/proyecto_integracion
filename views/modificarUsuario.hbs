@@ -1,0 +1,12 @@
+<h1>Modificar usuario</h1>
+<form method="POST" action="/adm/actualizarusuario">
+    <label for="correo">Ingrese el correo del usuario que desea modificar</label>
+    <input type="email" id="correo" name="correo" required>
+    <label for="departamento">Ingrese el nuevo departamento del usuario</label>
+    <select name="departamento" id="departamento">
+        <option value="1">Finanzas</option>
+        <option value="2">Recursos humanos</option>
+        <option value="3">TI</option>
+    </select>
+    <input type="submit" value="ACTUALIZAR">
+</form>

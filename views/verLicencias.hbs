@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Correo</th>
+            <th>Fecha de inicio</th>
+            <th>Fecha de termino</th>
+            <th>Motivo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each licencias}}
+        <tr>
+            <td>{{Correo}}</td>
+            <td>{{Fecha_Inicio}}</td>
+            <td>{{Fecha_Termino}}</td>
+            <td>{{Motivo}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<form method="POST" action="/adm/aceptarLicencia">
+    <input type="submit" value="ACEPTAR LICENCIA">
+</form>

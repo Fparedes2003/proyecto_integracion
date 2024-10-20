@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Genero</th>
+            <th>Correo</th>
+            <th>Password</th>
+            <th>Departamento_id</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each empleados}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.Nombre}}</td>
+            <td>{{this.Apellido}}</td>
+            <td>{{this.Genero}}</td>
+            <td>{{this.Correo}}</td>
+            <td>{{this.PASSWORD}}</td>
+            <td>{{this.Departamento_id}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<form method="POST" action="/adm/eliminarusuario">
+    <h1>ELIMINAR USUARIO</h1>
+    <label for="id">Ingrese el id</label>
+    <input type="number" name="id" id="id" required>
+    <input type="submit" value="ELIMINAR">
+</form>

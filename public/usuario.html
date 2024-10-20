@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="entrada" method="POST" action="/usuario">
+        <h1>REGISTRAR ENTRADA</h1>
+        <label for="correo">Ingrese su correo electronico</label>
+        <input type="email" id="correo" name="correo" required>
+        <input type="submit" value="REGISTRAR">
+    </form>
+    <form class="salida" method="POST" action="/usuario/salida">
+        <h1>REGISTRAR SALIDA</h1>
+        <label for="correo">Ingrese su correo electronico</label>
+        <input type="email" id="correo" name="correo" required>
+        <input type="submit" value="REGISTRAR">
+    </form>
+    <form class="inasistencia" method="POST" action="/usuario/inasistencia">
+        <h1>REGISTRAR INASISTENCIA</h1>
+        <label for="correo">Ingrese su correo electronico</label>
+        <input type="email" id="correo" name="correo" required>
+        <input type="submit" value="REGISTRAR">
+    </form>
+    <form class="licencia" method="POST" action="/usuario/licencia">
+        <h1>ENVIAR LICENCIA</h1>
+        <label for="correo">Ingrese su correo electronico</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="fecha_inicio">Ingrese la fecha de inicio</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+        <label for="fecha_termino">Ingrese la fecha de termino</label>
+        <input type="date" id="fecha_termino" name="fecha_termino" required>
+        <label for="motivo">Ingrese el motivo</label>
+        <select name="motivo" id="motivo">
+            <option value="Medico">Medico</option>
+            <option value="Accidente">Accidente</option>
+            <option value="Maternal/Paternal">Maternal/Paternal</option>
+        </select>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<form method="POST" action="/adm/crearreporte">
+<h1>INGRESA LOS DATOS DEL REPORTE</h1>
+<label for="correo">Ingrese el correo del empleado</label>
+<input type="email" name="correo" id="correo" required>
+<label for="motivo">Motivo</label>
+<select name="motivo" id="motivo">
+    <option value="llegadas atrasadas">Llegadas atrasadas</option>
+    <option value="salidas anticipadas">Salidas anticipadas</option>
+    <option value="otro">Otro</option>
+</select>
+<input type="submit" value="ENVIAR">
+</form>

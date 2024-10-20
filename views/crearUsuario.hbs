@@ -1,0 +1,23 @@
+<h1>INGRESE LOS DATOS DEL USUARIO</h1>
+<form method="POST" action="/adm/crearusuario">
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="Nombre" id="Nombre" required><br>
+    <label for="Apellido">Apellido</label>
+    <input type="text" name="Apellido" id="Apellido" required><br>
+    <label for="Genero">Genero</label>
+    <select name="Genero">
+        <option value="M">M</option>
+        <option value="F">F</option>
+    </select><br>
+    <label for="Correo">Correo electronico</label>
+    <input type="email" name="Correo" id="Correo" required><br>
+    <label for="PASSWORD">Contraseña</label>
+    <input type="password" name="PASSWORD" id="PASSWORD" required><br>
+    <label for="Departamento_id">Departamento</label>
+    <select name="Departamento_id">
+        <option value="1">Finanzas</option>
+        <option value="2">Recursos Humanos</option>
+        <option value="3">TI</option>
+    </select><br>
+    <input type="submit" value="CREAR USUARIO">
+</form>
